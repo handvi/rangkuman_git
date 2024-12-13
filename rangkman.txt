@@ -1,0 +1,132 @@
+INTRO GIT
+
+git adalah vcs(version control system) yang di gunakan untuk menyimpan source code dan kolaborasi dalam pengembangan code
+
+adapun cara instalalsi git
+pada windows 
+1.mendownload gitbash dengan meninstall installernya
+2. bisa menggunakan chocolaty
+
+pada linux 
+1. bisa menggunakan command
+pkg install git
+
+pada mac
+1. bisa menggunakan brew
+
+tools tambahan dengan instalasi source tree(git gui),vscode,light shooter
+
+
+FUNDAMENTAL GIT
+perintah dasar
+
+1. git init 
+   Bikin folder biasa jadi folder proyek Git.  
+
+2. git config
+   Atur info seperti nama dan email di Git.  
+
+3. git status
+   Cek kondisi file di folder (udah ditrack atau belum, ada yang diubah nggak).  
+
+4. git add
+   Masukin file yang mau disimpan ke daftar Git.  
+
+5. git commit 
+   Simpen perubahan dengan pesan (kayak bikin "checkpoint").  
+
+6. git clone  
+   Copy proyek Git dari internet ke komputer.  
+
+7. git remote  
+   Hubungin folder ke server online (GitHub).  
+
+8. git push  
+   Kirim perubahan dari komputer ke server online.  
+
+9. git pull  
+   Ambil perubahan terbaru dari server ke komputer.  
+
+
+GIT BRANCH
+
+`git branch` itu fitur buat bikin cabang (branch) di proyek. Fungsinya kayak bikin jalur alternatif dari kode utama (biasanya di branch `main` atau `master`).  
+
+ Gunanya:  
+ Ngerjain fitur baru atau eksperimen tanpa ganggu kode utama.  
+ Kalau fitur udah selesai, bisa digabung (merge) ke branch utama.  
+ Kalau eksperimen gagal, tinggal hapus branchnya tanpa ganggu kode lain.  
+
+ Perintah Penting:  
+1. Cek branch yang ada:  
+  
+   git branch
+  
+   (Branch aktif ada tanda bintang `*`).  
+
+2. Buat branch baru:  
+  
+   git branch namabranch
+  
+   (Branch baru ini belum otomatis aktif).  
+
+3. Pindah ke branch lain:  
+  
+   git checkout namabranch
+    
+
+4. Buat dan langsung pindah ke branch baru:  
+  
+   git checkout b namabranch
+    
+
+5. Hapus branch:  
+   git branch d namabranch
+   (Pakai `D` kalau mau paksa hapus).  
+
+Branch bikin kerja tim lebih gampang. Semua bisa kerja di branch masingmasing, terus gabungin kodenya pas udah siap.
+
+
+--GIT GUI dengan SourceTree 
+
+SourceTree adalah aplikasi GUI (Graphical User Interface) untuk Git. Ini mempermudah kerja dengan Git tanpa perlu banyak pakai terminal. Cocok buat pemula atau yang pengen visualisasi lebih jelas.  
+
+ Kelebihan SourceTree:  
+    Visualisasi cabang (branch) dan commit.  
+    Drag and drop untuk beberapa fungsi.  
+    Mudah kelola repository lokal dan remote.  
+    Integrasi dengan layanan seperti GitHub, GitLab, Bitbucket.  
+
+ Cara Menggunakan:  
+
+1. Install dan Setup:  
+    Download SourceTree dari situs resminya.  
+    Install, lalu login ke akun GitHub, GitLab, atau Bitbucket kalau perlu.  
+
+2. Clone Repository:  
+    Klik tombol Clone di SourceTree.  
+    Masukkan URL repository Git (misalnya dari GitHub).  
+    Pilih folder lokal tempat repository akan disimpan.  
+
+3. Cek Status Repository:  
+    Di panel utama, SourceTree menampilkan daftar file yang diubah, belum ditrack, atau siap dicommit.  
+    Klik file untuk melihat perubahannya.  
+
+4. Commit Perubahan:  
+    Pilih file yang mau dicommit.  
+    Klik Commit, tambahkan pesan, lalu klik Commit lagi.  
+
+5. Push ke Remote:  
+    Setelah commit, klik tombol Push untuk mengirim perubahan ke repository online.  
+
+6. Pull Perubahan:  
+    Klik tombol Pull untuk ambil perubahan terbaru dari repository online.  
+
+7. Kelola Branch:  
+    Klik tab Branch untuk lihat semua branch.  
+    Bisa buat, pindah, atau hapus branch langsung dari GUI.  
+
+8. Merge:  
+    Untuk gabung branch, pilih branch tujuan, klik kanan branch yang mau digabung, lalu pilih Merge.  
+
+SourceTree mempermudah melihat semua alur kerja Git, jadi lebih gampang kelola cabang, lihat riwayat commit, dan kerja bareng tim.
